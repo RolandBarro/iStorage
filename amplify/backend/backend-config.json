@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"istorage114a7135": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"iStoragePublic": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

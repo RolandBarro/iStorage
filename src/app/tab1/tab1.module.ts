@@ -6,6 +6,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { ImagePickerModule } from '../shared/image-picker/image-picker.module';
 
 @NgModule({
   imports: [
@@ -13,7 +14,10 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+
+    // custom
+    Tab1PageRoutingModule,
+    ImagePickerModule,
   ],
   declarations: [Tab1Page]
 })

@@ -1,0 +1,20 @@
+<input 
+  #imagePicker 
+  class="hidden" 
+  type="file" 
+  (change)="onFileChanged($event)"
+  accept="image/x-png,image/gif,image/jpeg">
+
+<button
+  class="overlay overlay-bottom overlay-right"
+  fill="clear"
+  color="dark"
+  size="medium"
+  type="button"
+  (click)="imagePicker.click()">
+  Pick Image
+</button>
+
+<div style="text-align: center; width: 100%;">
+  <img *ngIf="image" [src]="image" alt="image">
+</div>
